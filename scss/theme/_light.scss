@@ -1,0 +1,39 @@
+@use "../abstracts";
+html {
+  --text-color: #1a162e;
+  --icon-color: brightness(0) saturate(100%) invert(10%) sepia(12%)
+    saturate(2389%) hue-rotate(210deg) brightness(94%) contrast(100%);
+  --body-bg: #f6f6f6;
+  --header-background-color: #eeeeee;
+  --top-act-group-background-color: #ffffff;
+  --top-act-group-shadow: #ededf633;
+  --top-act-group-separate: #ededf6;
+  @include abstracts.screen(lg) {
+    --header-background-color: #fff;
+    --header-shadow-color: #ededf633;
+  }
+  // dropdown
+  --dropdown-bg-color: #fff;
+  --dropdown-shadow-color: #c8c8c866;
+  --top-menu-border-color: #d2d1d6;
+  // sidebar
+  --sidebar-bg: #fff;
+  --sidebar-shadow: #c8c8c8;
+  // Category item
+  --cate-item-bg: #eee;
+  --cate-item-thumb-bg: #fff;
+  --cate-item-title-color: #000;
+  @include abstracts.screen(md) {
+    --cate-item-bg: #fff;
+  }
+  // Buttons
+  --filter-btn-color: #6c6c72;
+  --filter-btn-bg: #fff;
+  // product card
+  --product-card-bg: #fff;
+  --product-card-shadow: rgba(237, 237, 246, 0.2);
+  // filter form
+  --filter-form-bg: #fff;
+  --filter-form-shadow: #c8c8c866;
+  --filter-form-tag-bg: #f8f8fb;
+}
