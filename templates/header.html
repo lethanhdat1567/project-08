@@ -5,9 +5,9 @@
       <img src="./assets/icons/more.svg" alt="" class="top-bar__more-icon">
     </button>
     <!-- logo -->
-    <a href="./" class="logo">
-      <img src="./assets/icons/logo.svg" alt="" class="logo__img" />
-      <h1 class="logo__title">grocemart</h1>
+    <a href="./" class="logo top-bar__logo">
+      <img src="./assets/icons/logo.svg" alt="" class="logo__img top-bar__logo-img  " />
+      <h1 class="logo__title top-bar__logo-title">grocemart</h1>
     </a>
     <!-- Navbar -->
     <nav id="navbar" class="navbar hide">
@@ -15,9 +15,9 @@
         <img src="./assets/icons/arrow-left.svg" alt="">
       </button>
 
-      <a href="#!" class="nav-btn d-none d-md-flex">
+      <a href="./checkout.html" class="nav-btn d-none d-md-flex">
         <img src="./assets/icons/buy.svg" alt="" class="nav-btn__icon icon">
-        <span class="nav-btn__title">Card</span>
+        <span class="nav-btn__title">Cart</span>
         <span class="nav-btn__qtn">3</span>
       </a>
       <a href="#!" class="nav-btn d-none d-md-flex">
@@ -1241,26 +1241,13 @@
     <div class="navbar__overplay js-toggle" toggle-target="#navbar">
     </div>
     <!-- Actions -->
-    <div class="top-act">
-      <div class="top-act__group d-md-none top-act__group--single">
-        <button class="top-act__btn">
-          <img src="./assets/icons/seach.svg" alt="" class="icon top-act__icon" />
-        </button>
-      </div>
-      <div class="top-act__group d-md-none">
-        <button class="top-act__btn">
-          <img src="./assets/icons/heart.svg" alt="" class="icon top-act__icon" />
-          <span class="top-act__title">03</span>
-        </button>
-        <div class="top-act__separate"></div>
-        <button class="top-act__btn">
-          <img src="./assets/icons/buy.svg" alt="" class="icon top-act__icon" />
-          <span class="top-act__title">$65.42</span>
-        </button>
-      </div>
-      <div class="top-act__user">
-        <img src="./assets/img/z4888248915574_b3c4f7538cab253aae1f1560aa4672a3 (1).jpg" alt="" class="top-act__avatar">
-      </div>
+    <div class="top-act ">
+      <a href="./sign-in.html" class="btn btn--text d-md-none">
+        Login
+      </a>
+      <a href="./sign-up.html" class="top-act__sign-up btn btn--primary">
+        Sign up
+      </a>
       </div>
     </div>
   </div>

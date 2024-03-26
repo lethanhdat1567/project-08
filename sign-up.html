@@ -28,20 +28,153 @@
     <!-- styles -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <script src="./assets/js/scripts.js"></script>
-    <title>Sign in | Grocery Mart</title>
+    <title>Sign Up | Grocery Mart</title>
   </head>
   <body>
-    <!-- header -->
-    <header id="header"></header>
+    <main class="auth">
+      <!-- Auth intro -->
+      <div class="auth__intro">
+        <a href="./" class="logo auth__intro-logo d-none d-md-flex">
+          <img src="./assets/icons/logo.svg" alt="" class="logo__img" />
+          <h1 class="logo__title">grocemart</h1>
+        </a>
+        <img
+          src="./assets/img/auth/auth-1.svg"
+          alt=""
+          class="auth__intro-img"
+        />
+        <p class="auth__intro-text">
+          The best of luxury brand values, high quality products, and innovative
+          services
+        </p>
+        <button
+          class="auth__intro-next d-none d-md-flex js-toggle"
+          toggle-target="#auth-content"
+        >
+          <img src="./assets/img/auth/slide-auth.svg" alt="" />
+        </button>
+      </div>
+      <!-- Auth content -->
+      <div id="auth-content" class="auth__content hide">
+        <div class="auth__content-inner">
+          <!-- logo -->
+          <a href="./" class="logo">
+            <img src="./assets/icons/logo.svg" alt="" class="logo__img" />
+            <h1 class="logo__title">grocemart</h1>
+          </a>
+          <h1 class="auth__heading">Sign Up</h1>
+          <p class="auth__desc">
+            Let’s create your account and Shop like a pro and save money.
+          </p>
+          <form action="./index-logined.html" class="form auth__form">
+            <div class="form__group">
+              <div class="form__text-input">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  name=""
+                  id=""
+                  class="form__input"
+                  required
+                  autofocus
+                />
+                <img
+                  src="./assets/icons/form__error.svg"
+                  alt=""
+                  class="form__input-icon-error"
+                />
+                <img
+                  src="./assets/icons/message.svg"
+                  alt=""
+                  class="form__input-icon"
+                />
+              </div>
+              <p class="form__error">Email is not in correct format</p>
+            </div>
+            <div class="form__group">
+              <div class="form__text-input">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  name=""
+                  id=""
+                  class="form__input"
+                  required
+                  minlength="6"
+                />
+                <img
+                  src="./assets/icons/form__error.svg"
+                  alt=""
+                  class="form__input-icon-error"
+                />
+                <img
+                  src="./assets/icons/lock.svg"
+                  alt=""
+                  class="form__input-icon"
+                />
+              </div>
+              <p class="form__error">Password must be at least 6 characters</p>
+            </div>
+            <div class="form__group">
+              <div class="form__text-input">
+                <input
+                  type="password"
+                  placeholder="Confirm password"
+                  name=""
+                  id=""
+                  class="form__input"
+                  required
+                  minlength="6"
+                />
+                <img
+                  src="./assets/icons/form__error.svg"
+                  alt=""
+                  class="form__input-icon-error"
+                />
+                <img
+                  src="./assets/icons/lock.svg"
+                  alt=""
+                  class="form__input-icon"
+                />
+              </div>
+              <p class="form__error">Password must be at least 6 characters</p>
+            </div>
+            <div class="form__group form__group--inline">
+              <label class="form__checkbox">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="form__checkbox-input d-none"
+                />
+                <span class="form__checkbox-label">Set as default card</span>
+              </label>
+            </div>
+            <div class="form__group auth__btn-group">
+              <button class="btn btn--primary auth__btn form__submit-btn">
+                Sign up
+              </button>
+              <button class="btn btb--outline auth__btn btn--no-margin">
+                <img
+                  src="./assets/icons/google.svg"
+                  alt=""
+                  class="btn__icon icon"
+                />
+                Sign in with Google
+              </button>
+            </div>
+          </form>
+          <p class="auth__text">
+            You have account yet?
+            <a href="./sign-in.html" class="auth__link auth__text-link"
+              >Sign In</a
+            >
+          </p>
+        </div>
+      </div>
+    </main>
     <script>
-      load("#header", "./templates/header.html");
-    </script>
-    <!-- main -->
-    <h1>Sign up page</h1>
-    <!-- footer -->
-    <footer id="footer"></footer>
-    <script>
-      load("#footer", "./templates/footer.html");
+      window.dispatchEvent(new Event("template-loaded"));
     </script>
   </body>
 </html>
