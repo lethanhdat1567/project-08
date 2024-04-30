@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Coffee Beans - Espresso Arabica and Robusta Beans",
+      "description": "Lavazza",
+      "price": 100,
+      "image": "item1.png"
+    },
+    {
+      "id": 2,
+      "name": "Coffee Beans - Espresso Arabica and Robusta Beans",
+      "description": "Lavazza",
+      "price": 100,
+      "image": "item2.png"
+    },
+    {
+      "id": 3,
+      "name": "Coffee Beans - Espresso Arabica and Robusta Beans",
+      "description": "Lavazza",
+      "price": 100,
+      "image": "item3.png"
+    },
+    {
+      "id": 4,
+      "name": "Coffee Beans - Espresso Arabica and Robusta Beans",
+      "description": "Lavazza",
+      "price": 100,
+      "image": "item4.png"
+    }
+  ]
+}
