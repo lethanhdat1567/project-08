@@ -1303,5 +1303,4 @@ const header = (function Header() {
 })();
 
 const headerRoot = document.querySelector('.top-bar');
-console.log(headerRoot);
 headerRoot.innerHTML = header;

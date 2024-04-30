@@ -2,7 +2,7 @@ import html from '../redux/core.js';
 Product((products) => {
     const productRoot = document.querySelector('.products-wrapper');
     const result = products.map((product) => {
-        return html` <div class="col">
+        return html`<div class="col">
             <article class="product-card">
                 <div class="product-card__img-wrap">
                     <a
@@ -34,7 +34,7 @@ Product((products) => {
             </article>
         </div>`;
     });
-    productRoot.innerHTML = result;
+    productRoot.innerHTML = result.join('');
 });
 
 function Product(callback) {

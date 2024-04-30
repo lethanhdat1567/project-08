@@ -13,21 +13,21 @@
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
         <!-- styles -->
         <link rel="stylesheet" href="./assets/css/main.css" />
-        <script type="module" src="../assets/components/HeaderLogined.js"></script>
         <script src="./assets/js/scripts.js"></script>
         <title>Grocery Mart</title>
     </head>
     <body>
         <!-- header -->
         <header id="header" class="header"></header>
+        <script type="module" src="./assets/components/HeaderLogined.js"></script>
         <script>
             load('#header', './templates/header-logined.html');
         </script>
         <!-- body -->
-        <main class="product-page">
-            <script type="module" src="./assets/components/ProductDetail.js"></script>
-        </main>
+        <main class="product-page"></main>
+        <script type="module" src="./assets/components/ProductDetail.js"></script>
         <!-- footer -->
+
         <footer id="footer" class="footer"></footer>
         <script>
             load('#footer', './templates/footer.html');
